@@ -1,5 +1,5 @@
 ---
-title: "ETC5513 Assignment 2: A comprehensive Git, GitHub, and CLI Guide"
+title: "ETC5513 Assignment 2: A comprehensive Git, GitHub, and CLI  (Windows Terminal) Guide"
 author: "Aditya Sharma"
 format: html
 ---
@@ -14,32 +14,55 @@ Inside the project, I created a simple "example.qmd" file and knitted it to HTML
 data <- read.csv("data/dataset.csv")
 ```
 
-## **2. Initialising Git and connect GitHub** 
+## **2. Initialising Git and connect GitHub**
 
 Next, I opened the terminal in the project folder and initialised Git using the following commands:
 
-**- git init**
+``` bash
+git init
+```
 
-**- git status**
+This creates a local repository so Git can track my changes. I then added the files and made the first commit using commands:
 
-This creates a local repository so Git can track my changes. I then added the files and made the first commit:
+``` bash
+git add .
+git commit -m "Initial commit with example qmd"
+```
 
-**- git add .**
+After that, I created a new repository on GitHub and linked it to my local project using commands:
 
-**- git commit -m "Initial commit with example qmd"**
+``` bash
+git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git
 
-After that, I created a new repository on GitHub and linked it to my local project:
+git branch -M main
 
-**- git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git**
-
-**- git branch -M main**
-
-**- git push -u origin main**
+git push -u origin main
+```
 
 This uploads the local repository to GitHub and sets "main" as the default branch.
 
-## **3. Create and use a branch**
+## **3. Creating and using a branch**
 
-I created a new branch called "testbranch" to work on changes separately from "main":
+I created a new branch called "testbranch" to work on changes separately from "main" using:
 
 **- git checkout -b testbranch**
+
+I then modified "example.qmd" on this branch and committed the change using commands:
+
+**- git add example.qmd**
+
+**- git commit -m "Update example qmd on testbranch"**
+
+**- git push -u origin testbranch**
+
+I have used a branching because it lets me work on new changes without affecting the main version of the project.
+
+## **4. Adding the data folder and amend**
+
+I created a folder called "data" and added the Assignment 1 dataset to it using the following commands:\
+
+**- mkdir data**
+
+**- cp "dataset" data/**
+
+Then I staged the new folder and amended the previous commit so that the "data" folder became part of the last commit:
