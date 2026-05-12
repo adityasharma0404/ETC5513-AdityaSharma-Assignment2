@@ -8,7 +8,7 @@
 
 <meta name="author" content="Aditya Sharma">
 
-<title>example</title>
+<title>A comprehensive Git, GitHub, and CLI Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">example</h1>
+<h1 class="title">A comprehensive Git, GitHub, and CLI Guide</h1>
 </div>
 
 
@@ -106,38 +106,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="a-comprehensive-git-github-and-cli-guide" class="level1">
-<h1><strong>A comprehensive Git, GitHub, and CLI Guide</strong></h1>
 <section id="creating-the-project" class="level2">
 <h2 class="anchored" data-anchor-id="creating-the-project"><strong>1. Creating the project</strong></h2>
 <p>First, I created a new <strong>RStudio Project</strong> for the assignment. This keeps all files in one place and makes version control easier because the project folder becomes the working directory.</p>
 <p>Inside the project, I created a simple “example.qmd” file and knitted it to HTML to confirm that the file works correctly. This step is important because it checks that the Quarto document renders before I start tracking changes with Git.</p>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/dataset.csv"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code> customer_id        signup_date        marketing_spend      visits     
- Length:150         Length:150         Min.   :  2.42   Min.   : 0.00  
- Class :character   Class :character   1st Qu.: 68.18   1st Qu.: 3.00  
- Mode  :character   Mode  :character   Median :149.65   Median : 5.00  
-                                       Mean   :147.14   Mean   : 5.58  
-                                       3rd Qu.:220.02   3rd Qu.: 7.00  
-                                       Max.   :299.76   Max.   :12.00  
-                                                                       
- purchase_amount    segment             notes          
- Min.   :  0.00   Length:150         Length:150        
- 1st Qu.: 75.36   Class :character   Class :character  
- Median :139.06   Mode  :character   Mode  :character  
- Mean   :143.14                                        
- 3rd Qu.:199.98                                        
- Max.   :378.58                                        
- NA's   :18                                            </code></pre>
-</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/dataset.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
-<section id="initialise-git-and-connect-github" class="level2">
-<h2 class="anchored" data-anchor-id="initialise-git-and-connect-github"><strong>2. Initialise Git and connect GitHub</strong></h2>
-<p>Next, I opened the terminal in the project folder and initialised Git:</p>
+<section id="initialising-git-and-connect-github" class="level2">
+<h2 class="anchored" data-anchor-id="initialising-git-and-connect-github"><strong>2. Initialising Git and connect GitHub</strong></h2>
+<section id="next-i-opened-the-terminal-in-the-project-folder-and-initialised-git-using-the-following-commands" class="level4">
+<h4 class="anchored" data-anchor-id="next-i-opened-the-terminal-in-the-project-folder-and-initialised-git-using-the-following-commands">Next, I opened the terminal in the project folder and initialised Git using the following commands:</h4>
+<p><strong>- git init</strong></p>
+<p><strong>- git status</strong></p>
+</section>
+<section id="this-creates-a-local-repository-so-git-can-track-my-changes.-i-then-added-the-files-and-made-the-first-commit" class="level4">
+<h4 class="anchored" data-anchor-id="this-creates-a-local-repository-so-git-can-track-my-changes.-i-then-added-the-files-and-made-the-first-commit">This creates a local repository so Git can track my changes. I then added the files and made the first commit:</h4>
+<p><strong>- git add .</strong></p>
+<p><strong>- git commit -m “Initial commit with example qmd”</strong></p>
+</section>
+<section id="after-that-i-created-a-new-repository-on-github-and-linked-it-to-my-local-project" class="level4">
+<h4 class="anchored" data-anchor-id="after-that-i-created-a-new-repository-on-github-and-linked-it-to-my-local-project">After that, I created a new repository on GitHub and linked it to my local project:</h4>
+<p><strong>- git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git</strong></p>
+<p><strong>- git branch -M main</strong></p>
+<p><strong>- git push -u origin main</strong></p>
 </section>
 </section>
 

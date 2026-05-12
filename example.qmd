@@ -1,10 +1,8 @@
 ---
-title: "example"
+title: "A comprehensive Git, GitHub, and CLI Guide"
 author: "Aditya Sharma"
 format: html
 ---
-
-# **A comprehensive Git, GitHub, and CLI Guide**
 
 ## **1. Creating the project**
 
@@ -14,9 +12,26 @@ Inside the project, I created a simple "example.qmd" file and knitted it to HTML
 
 ```{r}
 data <- read.csv("data/dataset.csv")
-summary(data)
 ```
 
-## **2. Initialise Git and connect GitHub**
+## **2. Initialising Git and connect GitHub**
 
-Next, I opened the terminal in the project folder and initialised Git:
+#### Next, I opened the terminal in the project folder and initialised Git using the following commands:
+
+**- git init**
+
+**- git status**
+
+#### This creates a local repository so Git can track my changes. I then added the files and made the first commit:
+
+**- git add .**
+
+**- git commit -m "Initial commit with example qmd"**
+
+#### After that, I created a new repository on GitHub and linked it to my local project:
+
+**- git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git**
+
+**- git branch -M main**
+
+**- git push -u origin main**
