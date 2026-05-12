@@ -8,7 +8,7 @@
 
 <meta name="author" content="Aditya Sharma">
 
-<title>A comprehensive Git, GitHub, and CLI Guide</title>
+<title>ETC5513 Assignment 2: A comprehensive Git, GitHub, and CLI (Windows Terminal) Guide</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -83,7 +83,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">A comprehensive Git, GitHub, and CLI Guide</h1>
+<h1 class="title">ETC5513 Assignment 2: A comprehensive Git, GitHub, and CLI (Windows Terminal) Guide</h1>
 </div>
 
 
@@ -109,29 +109,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="creating-the-project" class="level2">
 <h2 class="anchored" data-anchor-id="creating-the-project"><strong>1. Creating the project</strong></h2>
 <p>First, I created a new <strong>RStudio Project</strong> for the assignment. This keeps all files in one place and makes version control easier because the project folder becomes the working directory.</p>
-<p>Inside the project, I created a simple “example.qmd” file and knitted it to HTML to confirm that the file works correctly. This step is important because it checks that the Quarto document renders before I start tracking changes with Git.</p>
+<p>Inside the project, I created a simple “example.qmd” file and knitted it to HTML to confirm that the file works correctly. This step is important because it checks that the Quarto document renders before I start tracking changes with Git. And then I loaded my Assignment 1 dataset onto R.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"data/dataset.csv"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 </section>
 <section id="initialising-git-and-connect-github" class="level2">
 <h2 class="anchored" data-anchor-id="initialising-git-and-connect-github"><strong>2. Initialising Git and connect GitHub</strong></h2>
-<section id="next-i-opened-the-terminal-in-the-project-folder-and-initialised-git-using-the-following-commands" class="level4">
-<h4 class="anchored" data-anchor-id="next-i-opened-the-terminal-in-the-project-folder-and-initialised-git-using-the-following-commands">Next, I opened the terminal in the project folder and initialised Git using the following commands:</h4>
-<p><strong>- git init</strong></p>
-<p><strong>- git status</strong></p>
+<p>Next, I opened the terminal in the project folder and initialised Git using the following commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This creates a local repository so Git can track my changes. I then added the files and made the first commit using commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit with example qmd"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>After that, I created a new repository on GitHub and linked it to my local project using commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This uploads the local repository to GitHub and sets&nbsp;“main”&nbsp;as the default branch.</p>
 </section>
-<section id="this-creates-a-local-repository-so-git-can-track-my-changes.-i-then-added-the-files-and-made-the-first-commit" class="level4">
-<h4 class="anchored" data-anchor-id="this-creates-a-local-repository-so-git-can-track-my-changes.-i-then-added-the-files-and-made-the-first-commit">This creates a local repository so Git can track my changes. I then added the files and made the first commit:</h4>
-<p><strong>- git add .</strong></p>
-<p><strong>- git commit -m “Initial commit with example qmd”</strong></p>
+<section id="creating-and-using-a-branch" class="level2">
+<h2 class="anchored" data-anchor-id="creating-and-using-a-branch"><strong>3. Creating and using a branch</strong></h2>
+<p>I created a new branch called “testbranch” to work on changes separately from “main” using:</p>
+<p><strong>- git checkout -b testbranch</strong></p>
+<p>I then modified&nbsp;“example.qmd”&nbsp;on this branch and committed the change using commands:</p>
+<p><strong>- git add example.qmd</strong></p>
+<p><strong>- git commit -m “Update example qmd on testbranch”</strong></p>
+<p><strong>- git push -u origin testbranch</strong></p>
+<p>I have used a branching because it lets me work on new changes without affecting the main version of the project.</p>
 </section>
-<section id="after-that-i-created-a-new-repository-on-github-and-linked-it-to-my-local-project" class="level4">
-<h4 class="anchored" data-anchor-id="after-that-i-created-a-new-repository-on-github-and-linked-it-to-my-local-project">After that, I created a new repository on GitHub and linked it to my local project:</h4>
-<p><strong>- git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git</strong></p>
-<p><strong>- git branch -M main</strong></p>
-<p><strong>- git push -u origin main</strong></p>
-</section>
+<section id="adding-the-data-folder-and-amend" class="level2">
+<h2 class="anchored" data-anchor-id="adding-the-data-folder-and-amend"><strong>4. Adding the data folder and amend</strong></h2>
+<p>I created a folder called “data” and added the Assignment 1 dataset to it using the following commands:<br>
+</p>
+<p><strong>- mkdir data</strong></p>
+<p><strong>- cp “dataset” data/</strong></p>
+<p>Then I staged the new folder and amended the previous commit so that the “data” folder became part of the last commit:</p>
 </section>
 
 </main>

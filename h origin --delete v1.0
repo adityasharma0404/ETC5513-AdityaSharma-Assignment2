@@ -1,0 +1,83 @@
+[33mtag v1.0[m
+Tagger: Your Name <asha0404@student.monash.edu>
+Date:   Wed May 13 02:14:56 2026 +1000
+
+Version 1.0 release
+
+[33mcommit fe88a952847bbe799981ec6065601b856712cf7b[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;33mtag: [m[1;33mv1.0[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Your Name <asha0404@student.monash.edu>
+Date:   Wed May 13 02:01:24 2026 +1000
+
+    Resolve merge conflict between main and testbranch
+
+[1mdiff --git a/example.qmd b/example.qmd[m
+[1mindex 06450a0..c877787 100644[m
+[1m--- a/example.qmd[m
+[1m+++ b/example.qmd[m
+[36m@@ -14,51 +14,27 @@[m [mInside the project, I created a simple "example.qmd" file and knitted it to HTML[m
+ data <- read.csv("data/dataset.csv")[m
+ ```[m
+ [m
+[31m-## **2. Initialising Git and connect GitHub**[m
+[32m+[m[32m## **2. Initialising Git and connect GitHub**[m[41m [m
+ [m
+[31m-#### Next, I opened the terminal in the project folder and initialised Git using the following commands:[m
+[31m-[m
+[31m-**- git init**[m
+[32m+[m[32mNext, I opened the terminal in the project folder and initialised Git using the following commands:[m
+ [m
+[31m-**- git status**[m
+[32m+[m[32m-   git init[m
+ [m
+[31m-#### This creates a local repository so Git can track my changes. I then added the files and made the first commit:[m
+[32m+[m[32mThis creates a local repository so Git can track my changes. I then added the files and made the first commit using commands:[m
+ [m
+ **- git add .**[m
+ [m
+ **- git commit -m "Initial commit with example qmd"**[m
+ [m
+[31m-#### After that, I created a new repository on GitHub and linked it to my local project:[m
+[32m+[m[32mAfter that, I created a new repository on GitHub and linked it to my local project using commands:[m
+ [m
+ **- git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git**[m
+ [m
+ **- git branch -M main**[m
+ [m
+ **- git push -u origin main**[m
+[31m-Next, I opened the terminal in the project folder and initialised Git using the following commands:[m
+[31m-[m
+[31m-``` bash[m
+[31m-git init[m
+[31m-```[m
+[31m-[m
+[31m-This creates a local repository so Git can track my changes. I then added the files and made the first commit using commands:[m
+[31m-[m
+[31m-``` bash[m
+[31m-git add .[m
+[31m-git commit -m "Initial commit with example qmd"[m
+[31m-```[m
+[31m-[m
+[31m-After that, I created a new repository on GitHub and linked it to my local project using commands:[m
+[31m-[m
+[31m-``` bash[m
+[31m-git remote add origin https://github.com/adityasharma0404/ETC5513-AdityaSharma-Assignment2.git[m
+[31m-[m
+[31m-git branch -M main[m
+[31m-[m
+[31m-git push -u origin main[m
+[31m-```[m
+ [m
+[31m-This uploads the local repository to GitHub and sets "main" as the default branch.[m
+[32m+[m[32mThis uploads the local repository to GitHub and sets "main" as the default branch.[m
+ [m
+ ## **3. Creating and using a branch**[m
+ [m
+[36m@@ -66,7 +42,7 @@[m [mI created a new branch called "testbranch" to work on changes separately from "m[m
+ [m
+ **- git checkout -b testbranch**[m
+ [m
+[31m-I then modified "example.qmd" on this branch and committed the change using commands:[m
+[32m+[m[32mI then modified "example.qmd" on this branch and committed the change using commands:[m
+ [m
+ **- git add example.qmd**[m
+ [m
