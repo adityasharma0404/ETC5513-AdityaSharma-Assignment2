@@ -3,7 +3,7 @@
     "path": "D:/MONASH UNIVERSITY/ETC5513/Assignment 2/git_guide/example.qmd",
     "project_path": "example.qmd",
     "type": "quarto_markdown",
-    "hash": "1391769641",
+    "hash": "0",
     "contents": "",
     "dirty": true,
     "created": 1778593793918.0,
@@ -19,14 +19,14 @@
         "scrollLine": "0",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "925:245"
+        "rmdVisualModeLocation": "1128:395"
     },
     "folds": "",
     "lastKnownWriteTime": 1778595168,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1778595332740,
+    "last_content_update": 1778595425168,
     "read_only": false,
     "read_only_alternatives": []
 }

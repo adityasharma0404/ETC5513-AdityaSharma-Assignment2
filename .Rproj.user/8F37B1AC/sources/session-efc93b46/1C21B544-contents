@@ -25,3 +25,11 @@ This creates a local repository so Git can track my changes. I then added the fi
 
 **git add .
 git commit -m "Initial commit with example qmd"**
+
+After that, I created a new repository on GitHub and linked it to my local project:
+
+git remote add origin https://github.com/adityasharma0404/REPO-NAME.git
+git branch -M main
+git push -u origin main
+
+git\@github.com:adityasharma0404/ETC5513-AdityaSharma-Assignment2.git
