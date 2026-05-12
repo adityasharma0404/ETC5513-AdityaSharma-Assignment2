@@ -1,0 +1,22 @@
+---
+title: "example"
+author: "Aditya Sharma"
+format: html
+---
+
+# **A comprehensive Git, GitHub, and CLI Guide**
+
+## **1. Creating the project**
+
+First, I created a new **RStudio Project** for the assignment. This keeps all files in one place and makes version control easier because the project folder becomes the working directory.
+
+Inside the project, I created a simple "example.qmd" file and knitted it to HTML to confirm that the file works correctly. This step is important because it checks that the Quarto document renders before I start tracking changes with Git.
+
+```{r}
+data <- read.csv("data/dataset.csv")
+summary(data)
+```
+
+## **2. Initialise Git and connect GitHub**
+
+Next, I opened the terminal in the project folder and initialised Git:

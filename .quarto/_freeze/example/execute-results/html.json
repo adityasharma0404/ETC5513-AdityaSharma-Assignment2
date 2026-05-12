@@ -1,0 +1,15 @@
+{
+  "hash": "b273e626a905034ce230cb1823b1031c",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"example\"\nauthor: \"Aditya Sharma\"\nformat: html\n---\n\n# **A comprehensive Git, GitHub, and CLI Guide**\n\n## **1. Creating the project**\n\nFirst, I created a new **RStudio Project** for the assignment. This keeps all files in one place and makes version control easier because the project folder becomes the working directory.\n\nInside the project, I created a simple \"example.qmd\" file and knitted it to HTML to confirm that the file works correctly. This step is important because it checks that the Quarto document renders before I start tracking changes with Git.\n\n\n::: {.cell}\n\n```{.r .cell-code}\ndata <- read.csv(\"data/dataset.csv\")\nsummary(data)\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n customer_id        signup_date        marketing_spend      visits     \n Length:150         Length:150         Min.   :  2.42   Min.   : 0.00  \n Class :character   Class :character   1st Qu.: 68.18   1st Qu.: 3.00  \n Mode  :character   Mode  :character   Median :149.65   Median : 5.00  \n                                       Mean   :147.14   Mean   : 5.58  \n                                       3rd Qu.:220.02   3rd Qu.: 7.00  \n                                       Max.   :299.76   Max.   :12.00  \n                                                                       \n purchase_amount    segment             notes          \n Min.   :  0.00   Length:150         Length:150        \n 1st Qu.: 75.36   Class :character   Class :character  \n Median :139.06   Mode  :character   Mode  :character  \n Mean   :143.14                                        \n 3rd Qu.:199.98                                        \n Max.   :378.58                                        \n NA's   :18                                            \n```\n\n\n:::\n:::\n\n\n## **2. Initialise Git and connect GitHub**\n\nNext, I opened the terminal in the project folder and initialised Git:\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

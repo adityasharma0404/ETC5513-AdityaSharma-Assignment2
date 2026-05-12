@@ -1,0 +1,32 @@
+{
+    "id": "1C21B544",
+    "path": "D:/MONASH UNIVERSITY/ETC5513/Assignment 2/git_guide/example.qmd",
+    "project_path": "example.qmd",
+    "type": "quarto_markdown",
+    "hash": "1391769641",
+    "contents": "",
+    "dirty": true,
+    "created": 1778593793918.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "rmdVisualMode": "true",
+        "rmdVisualWrapConfigured": "true",
+        "tempName": "Untitled2",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "16,0",
+        "scrollLine": "0",
+        "docOutlineVisible": "1",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "925:245"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1778595168,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1778595332740,
+    "read_only": false,
+    "read_only_alternatives": []
+}
